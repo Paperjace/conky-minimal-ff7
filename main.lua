@@ -73,7 +73,7 @@ end
 
 -- render top (cpu) line
 function conky_top_cpu_line(ord)
-    local _H = "${color2}${lua font h2 {PROCESS ${goto 156}PID ${goto 260}MEM% ${alignr}CPU%}}${font}${color}"
+    local _H = "${color2}${lua font h2 {PROCESS ${goto 156}PID ${goto 277}MEM% ${alignr}CPU%}}${font}${color}"
     if ord == "header" then
         return conky_parse(_H)
     end
@@ -94,7 +94,7 @@ end
 
 -- render top_mem line
 function conky_top_mem_line(ord)
-    local _H = "${color2}${lua font h2 {PROCESS ${goto 156}PID ${goto 265}CPU%${alignr}MEM%}}${font}${color}"
+    local _H = "${color2}${lua font h2 {PROCESS ${goto 156}PID ${goto 277}CPU%${alignr}MEM%}}${font}${color}"
     if ord == "header" then
         return conky_parse(_H)
     end
